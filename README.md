@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=juantoranzos&label=Profile%20views&color=0e75b6&style=flat" alt="juantoranzos" /> </p>
 
-- 🔭 I’m currently working on [Rest-Food](https://restfood-gamma.vercel.app/)
-
 - 💬 Ask me about **React, Java Script, Node, HTML5, CSS, Bootstrap, React Bootstrap**
 
 - 📫 How to reach me **toranzos628@gmail.com**
