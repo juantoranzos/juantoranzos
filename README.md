@@ -1,9 +1,7 @@
-<h1 align="center">Hi 👋, I'm Juan Toranzos</h1>
+<h1 align="center">Hi 👋, I'm Juan</h1>
 <h3 align="center">A passionate FullStack weeb developer from Argentina, Tucumán.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=juantoranzos&label=Profile%20views&color=0e75b6&style=flat" alt="juantoranzos" /> </p>
-
-- 💬 Ask me about **React, Java Script, Node, HTML5, CSS, Bootstrap, React Bootstrap**
 
 - 📫 How to reach me **toranzos628@gmail.com**
 
