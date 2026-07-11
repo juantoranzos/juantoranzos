@@ -1,3 +1,5 @@
+<p align="center"><b>English</b> · <a href="./README.es.md">Español</a></p>
+
 <h1 align="center">Hi, I'm Juan Toranzos 👋</h1>
 
 <p align="center">
@@ -47,8 +49,8 @@ These aren't tutorials or clones — they're real products, live in production, 
 ## 📊 GitHub stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=juantoranzos&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Juan's GitHub stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juantoranzos&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages" height="165" />
+  <img src="https://github-readme-stats-juantoranzos-projects.vercel.app/api?username=juantoranzos&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&count_private=true" alt="Juan's GitHub stats" height="165" />
+  <img src="https://github-readme-stats-juantoranzos-projects.vercel.app/api/top-langs/?username=juantoranzos&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages" height="165" />
 </p>
 
 ---
