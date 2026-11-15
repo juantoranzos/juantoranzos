@@ -1,0 +1,46 @@
+name: Contribution graph
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/scripts/contribution-graph.mjs
+      - .github/workflows/contribution-graph.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          mkdir -p dist
+          node .github/scripts/contribution-graph.mjs "$OWNER" dist/contribution-graph.svg
+
+      - name: Publish to output branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add contribution-graph.svg
+          git commit -q -m "chore: update contribution graph"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" output
